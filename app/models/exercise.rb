@@ -4,5 +4,4 @@ class Exercise < ApplicationRecord
   default_scope -> { order(created_at: :desc) }
   validates :name, presence: true
   validates :name, length: { maximum: 30 }
-  end
 end
