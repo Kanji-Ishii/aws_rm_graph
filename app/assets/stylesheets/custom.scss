@@ -1,0 +1,132 @@
+/* mixins, variables, etc. */
+$state-danger-text: #777;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* common items */
+.contents {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ff7043;
+}
+/* flash */
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin: 1rem 0;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.alert-alert, /* alert-alert is devise default failure flash */
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert-notice, /* alert-notice is devise default success flash */
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+/* header */
+header {
+  background-color: rgb(173, 219, 238);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width: 100%;
+  .header-container {
+    padding: 0 25px;
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      .navbar-li {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+/* exercises#index */
+.graph-container {
+  margin: 45px 0;
+  .ex_name {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .ex_option {
+    margin: 0 7px;
+  }
+}
+
+/* records#index */
+.rec_container h2 {
+  margin: 0;
+  padding: 30px 0;
+  border-bottom: 2px solid slategray;
+}
+.record {
+  padding: 15px 0;
+  border-bottom: 2px solid slategray;
+}
+
+/* forms */
+
+.form-container {
+  margin-top: 40px;
+  .field {
+    margin: 30px 0;
+    .label {
+      margin: 0;
+      font-size: 20px;
+    }
+    .form-controll {
+      border: 1px solid #bbb;
+      width: 60%;
+      font-size: 25px;
+      @include box_sizing;
+    }
+    .action {
+      width: 10%;
+      font-size: 20px;
+    }
+  }
+}
+
+input {
+  height: auto !important;
+}
+/*
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+*/
