@@ -51,5 +51,6 @@ test:
 production:
   <<: *default
   database: aws_rm_graph_production
-  username: aws_rm_graph
-  password: <%= ENV['AWS_RM_GRAPH_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= Rails.application.credentials.db[:password] %>
+  host: <%= Rails.application.credentials.db[:hostname] %>
