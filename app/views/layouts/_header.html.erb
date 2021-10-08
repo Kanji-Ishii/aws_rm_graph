@@ -1,7 +1,7 @@
 <% if user_signed_in? %> 
   <header>
     <div class="header-container">
-      <h2>WorkoutGraph | <%= yield(:title) %></h2>
+      <h1>WorkoutGraph | <%= yield(:title) %></h1>
       <p> ログインユーザー： <%= current_user.name %> さん <p>
       <div class="navbar">
         <%= link_to("ログアウト", destroy_user_session_path, {method: :delete, class: "link navbar-li"}) %>
