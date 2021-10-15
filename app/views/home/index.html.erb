@@ -1,12 +1,9 @@
 <% provide(:title, "トップページ") %>
 
 <div class="top_container">
-  <p class="top_text">
-  <span>このアプリはトレーニングの記録から自動的にRM値を計算しグラフを描画することであなたのトレーニングをサポートするサービスです。</span>
-  <br>
-  <img src="/assets/img_graph.jpg" class="img_graph">
-  <br>
-  <span>RMとは？</span><br>
+  <h2 class="top_text"><span>このアプリはトレーニングの記録から自動的にRM値を計算しグラフを描画することであなたのトレーニングをサポートするサービスです。</span></h2>
+  <%= image_tag asset_path('img_graph.jpg', class: "img_graph") %>
+  <p><span>RMとは？</span><br>
   Repetition Maximum（最大挙上重量）<br>
   つまり、ある人があるトレーニング種目を全力を出して1回だけ行える重量のことです。<br>
   <br>

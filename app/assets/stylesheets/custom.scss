@@ -68,11 +68,17 @@ header {
 /* home#index */
 .top_container {
   text-align: center;
+  .top_text {
+    width: 100%;
+    font-size: large;
+    margin-top: 60px;
+  }
   img {
     margin: 40px 0;
   }
   span {
     font-weight: bold;
+    background: linear-gradient(transparent 50%, yellow 50%);
   }
   .btn {
     border: 1px solid #bbb;
