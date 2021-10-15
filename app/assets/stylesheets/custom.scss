@@ -65,6 +65,60 @@ header {
   }
 }
 
+/* home#index */
+.top_container {
+  text-align: center;
+  img {
+    margin: 40px 0;
+  }
+  span {
+    font-weight: bold;
+  }
+  .btn {
+    border: 1px solid #bbb;
+    width: 400px;
+    line-height: 80px;
+    font-size: 25px;
+    @include box_sizing;
+    margin: 40px 80px;
+  }
+  .btn_login {
+    color: #00ac37;
+    border-color: #00ac37;
+    background-color: white;
+    border-radius: 10px;
+    &:hover {
+      color: black;
+      background-color: aquamarine;
+      border-color: black;
+      box-shadow: 5px 5px black;
+    }
+    &:active {
+      box-shadow: none;
+      position: relative;
+      top: 2.5px;
+      left: 5px;
+    }
+  }
+  .btn_register {
+    color: #00a6ff;
+    border-color: #00a6ff;
+    background-color: white;
+    border-radius: 10px;
+    &:hover {
+      color: black;
+      background-color: aqua;
+      border-color: black;
+      box-shadow: 5px 5px black;
+    }
+    &:active {
+      box-shadow: none;
+      top: 2.5px;
+      left: 5px;
+    }
+  }
+}
+
 /* exercises#index */
 .graph-container {
   margin: 45px 0;
